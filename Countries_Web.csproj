@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\**" />
+    <Compile Remove="Entities\Context\**" />
+    <Compile Remove="Repos\**" />
+    <Content Remove="Contracts\**" />
+    <Content Remove="Entities\Context\**" />
+    <Content Remove="Repos\**" />
+    <EmbeddedResource Remove="Contracts\**" />
+    <EmbeddedResource Remove="Entities\Context\**" />
+    <EmbeddedResource Remove="Repos\**" />
+    <None Remove="Contracts\**" />
+    <None Remove="Entities\Context\**" />
+    <None Remove="Repos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="GraphQL.Client" Version="3.2.0" />
+    <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="3.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+  </ItemGroup>
+
+
+</Project>
